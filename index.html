@@ -7,16 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- description -->
+    <title>WPM Counter</title>
     <meta name="description" content="Count you typing speed Now!">
-    <meta name="keywords" content="File, Transfer, Share, Peer2Peer">
+    <meta name="keywords" content="Typing speed, WPMCounter, Open Source">
     <meta name="author" content="Shaunak Guchhait">
     <meta name="color-scheme" content="dark light">
     <meta property="og:title" content="WPM Counter">
 
+    <!-- Links -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <link rel="stylesheet" href="style.css">
-    <title>WPM Counter</title>
+
 </head>
 
 <body>
@@ -30,13 +33,8 @@
 
                 <ul class="nav">
                     <li> <img height="20px" src="icons/envelope-fill.svg" onclick="infopg()"></li>
-                    <li>
-                        <label id="switch" class="switch">
-                            <input type="checkbox" onchange="toggleTheme()" id="slider">
-                            <span class="slider round"></span>
-                            
-                            </li>
-                    <li> <img height="20px " src="icons/info-circle-fill.svg " onclick="infopg() "></li>
+                    <li> <img height="20px" src="icons/moon-fill.svg" onclick="toggleTheme()"> </li>
+                    <li> <img height="20px " src="icons/info-circle-fill.svg " onclick="infopg()"></li>
             </div>
         </div>
     </div>
@@ -47,8 +45,8 @@
             <h1>Test your typing speed Now!!!</h1>
 
             <div class="col three ">
-                <h1 class="icon side ">[]</h1>
-                <h1 class="feature side ">Wow</h1>
+
+                <h1 class="feature side ">comppppp</h1>
                 <p class="side ">Wow wow wow wow wow wow wow wow wow wow wow wow wow</p>
             </div>
             <div class="col three ">
@@ -85,8 +83,10 @@
     <div class="section ">
         <div class="container ">
             <div class="col two ">
-                <h1 class="icon ">Result</h1>
-                <h1 class="service ">Result</h1>
+                <h1 class="icon "></h1>
+                <h1 class="service ">
+                    <a href="info.txt"></a>
+                </h1>
                 <p>Result</p>
             </div>
             <div class="col two ">
@@ -98,40 +98,49 @@
         </div>
     </div>
 
-    <footer class="section ">
+    <div class="section ">
         <div class="container ">
             <h1 class="reset "></h1>
         </div>
-        </div>
-        <div class="section ">
-            <div class="footer ">
-                <div class="container white ">
-                    <div class="col four left ">
-                        <h1>What?</h1>
-                        <p>So that's it. This started out as 20 minutes of making fun of modern web dev. Then it turned into a few hours of it.</p>
-                        <p>I hope you've enjoyed looking at every modern website ever.</p>
-                        <p>I don't actually hate this style as long as the content is meaningful. In fact, I think this type of design is pretty cool and effective.</p>
-                    </div>
-                    <div class="col four left ">
-                        <h1>How?</h1>
-                        <p>CSS3 and HTML. JS for header shrinking; optional. Site works perfectly with JS disabled (another gripe of mine with modern web dev).</p>
-                        <p>Only external libraries are GFonts.</p>
-                        <p>Moderately responsive, should work on anything modern.</p>
-                    </div>
-                    <div class="col four left ">
-                        <h1>Why?</h1>
-                        <p>Many popular HTML themes have thousands of lines of HTML, thousands of lines of CSS and several JS plugins on every page amounting to tens of thousands of lines of JavaScript.</p>
-                        <p>I fail to see a valid reason for this, particularly the horrendous line counts that are usually due to unused features or badly designed code.</p>
-                    </div>
-                    <div class="col four left ">
-                        <h1>Who?</h1>
-                        <p>I'm Andrew.</p>
-                        <p>You can get in touch with me through <a href="http://atunnecliffe.com ">http://atunnecliffe.com</a> or <a href="mailto:andrew@atunnecliffe.com ">emailing me</a>.</p>
-                    </div>
-                    <div class="group "></div>
+    </div>
+
+
+    <!-- FAQs -->
+
+    <div class="section ">
+        <div class="footer ">
+            <div class="container white ">
+                <h1>Frequently Asked Questions</h1>
+                <div class="col four left ">
+                    <h2>1. What is the WPM Calculator?</h2>
+
+                    <p> Words per minute, commonly abbreviated wpm (sometimes uppercased WPM), is a measure of words processed in a minute, often used as a measurement of the speed of typing, reading or Morse code sending and receiving.</p>
                 </div>
+
+                <div class="col four left ">
+                    <h2>2. What is the average typing speed?</h2>
+                    <p>If you type at an average speed, you should be able to hit around 41 words per minute (WPM). Even though 41 wpm is just an average typing speed, it’s more than enough to help you qualify for most jobs that require you to write or type
+                        on a keyboard, such as being a secretary, accountant, or typist.</p>
+                </div>
+
+                <div class="col four left ">
+                    <h2>3. What is the highest typing speed in the world?</h2>
+                    <p>The highest typing speed ever recorded was 216 words per minute (wpm), set by Stella Pajunas in 1946, using an IBM electric typewriter. Currently, the fastest English language typist is Barbara Blackburn, who reached a peak typing
+                        speed of 212 wpm during a test in 2005, using a Dvorak simplified keyboard.
+                    </p>
+                </div>
+
+                <div class="col four left ">
+                    <h2>4. How to increase your typing speed?</h2>
+
+                    <p>Read article: "<a href="https://www.quill.com/blog/tutorials/how-to-increase-your-typing-speed.html"> How to Increase typing speed </a>"
+
+                </div>
+
+                <div class="group "></div>
             </div>
-    </footer>
+        </div>
+    </div>
 
 </body>
 
