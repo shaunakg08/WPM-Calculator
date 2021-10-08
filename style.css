@@ -12,7 +12,8 @@ body {
     position: relative;
     width: 1170px;
     margin: 0 auto;
-    color: white font-size: 14px;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
     font-weight: 300;
     font-family: Roboto, 'Open Sans', Arial, sans-serif;
     overflow: hidden;
@@ -215,7 +216,6 @@ p {
         margin: 0 auto;
     }
     ul.nav li {
-        float: initial;
         display: inline-block;
     }
     .responsivegroup {
