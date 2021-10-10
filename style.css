@@ -56,10 +56,6 @@ nav {
     transition: all .5s ease-in-out;
 }
 
-nav:hover {
-    opacity: 0.1;
-}
-
 ul.nav {
     float: right;
     list-style: none;
@@ -187,6 +183,19 @@ p {
 
 section {
     padding: 100px 0;
+    visibility: hidden;
+    animation-name: in-out;
+    animation-duration: 4s;
+    transition: all 0.15s ease-in;
+}
+
+@keyframes in-out {
+    from {
+        visibility: hidden;
+    }
+    to {
+        visibility: visible;
+    }
 }
 
 .max-width {
