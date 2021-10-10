@@ -42,12 +42,14 @@ body {
     top: 0;
     left: 0;
     z-index: 100;
-    background: white;
+    background: rgb(167, 159, 159);
+    -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
 }
 
 .header.small {
     line-height: 50px;
-    box-shadow: 0px 1px 3px 0px rgba(50, 50, 50, 0.8);
 }
 
 .header.small>.container>#logo {
@@ -60,6 +62,14 @@ body {
     height: 10%;
     width: 20px;
     margin-left: 5px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
 }
 
 ul.nav {
@@ -156,7 +166,7 @@ h2 {
 }
 
 p {
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .left,
