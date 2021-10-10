@@ -19,6 +19,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css">
 
     <!-- Icon -->
@@ -35,7 +36,7 @@
             <div class="container">
                 <img class="logo" height="70px" style="position: absolute; top: 15px; " src="icons/logo.png">
 
-                <ul class="nav">
+                <ul class="nav" data-aos="slide-right" data-aos-duration="1500">
 
                     <a href="#contact"><i class="bi bi-envelope-fill" style="font-size:x-large;" title="contact me"></i></a>
                     <a href="https://github.com/Shaunak0806/WPM-Counter"><i class="bi bi-github" style="font-size: x-large;" title="github profile"></i></a>
@@ -49,7 +50,7 @@
 
     <div class="section ">
         <div class="container ">
-            <h1>Test your typing speed Now!!!</h1>
+            <h1 data-aos="zoom-in-up" data-aos-duration="1000">Test your typing speed Now!!!</h1>
 
             <div class="col three ">
 
@@ -117,8 +118,8 @@
 
     <div class="section ">
         <div class="footer ">
-            <div class="container white ">
-                <h1>Frequently Asked Questions</h1>
+            <div class="container white " data-aos="slide-up" data-aos-duration="1000">
+                <h1 data-aos="zoom-in-up">Frequently Asked Questions</h1>
                 <div class="col four left ">
                     <h2><b>1. What is the WPM Calculator?</b></h2>
 
@@ -153,11 +154,12 @@
     <!-- contact section start 
     ============================= -->
     <section class="contact" id="contact">
+
         <div class="max-width">
-            <h2 class="title">Contact Me</h2>
+            <h2 class="title" data-aos="slide-down" data-aos-duration="1000">Contact Me</h2>
             <div class="contact-content">
-                <div class="column left">
-                    <div class="text">Get in Touch</div>
+                <div class="column left" data-aos="slide-right" data-aos-duration="1000">
+                    <div class="text" data-aos="slide-up">Get in Touch</div>
 
                     <div class="icons">
                         <div class="row">
@@ -186,7 +188,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="column right">
+                <div class="column right" data-aos="slide-left" data-aos-duration="1000">
                     <div class="text">Message me</div>
                     <form action="#">
                         <div class="fields">
@@ -210,14 +212,21 @@
                 </div>
             </div>
         </div>
+
     </section>
 
     <!-- footer section start -->
     <footer>
-        <span>Created By <a href="https://shaunak0806.github.io" target="_blank">Shaunak Guchhait</a> | <span class="far fa-copyright"></span> 2021 All rights reserved.</span>
+        <span data-aos="flip-up">Created By <a href="https://shaunak0806.github.io" target="_blank">Shaunak Guchhait</a> | <span class="far fa-copyright"></span> 2021 All rights reserved.</span>
     </footer>
 
+    <!-- our AOS data
+==================== -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
 </body>
-<script src="theme.js "></script>
 
 </html>
