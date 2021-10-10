@@ -334,7 +334,8 @@ section .title::after {
     margin-left: 6px;
     margin-right: 0;
     border-radius: 100%;
-    background-color: #33353d
+    color: black;
+    background-color: #4864d1
 }
 
 .copyright-text {
@@ -378,7 +379,7 @@ section .title::after {
 
 .social-icons a {
     background-color: #eceeef;
-    color: #818a91;
+    color: #070808;
     font-size: 16px;
     display: inline-block;
     line-height: 44px;
@@ -426,7 +427,7 @@ section .title::after {
 /* contact section styling */
 
 .contact .title::after {
-    content: "get in touch";
+    content: "Get in touch";
 }
 
 .contact .contact-content .column {
@@ -459,7 +460,7 @@ section .title::after {
 
 .contact .contact-content .row i {
     font-size: 25px;
-    color: crimson;
+    color: rgb(0, 0, 0);
 }
 
 .contact .contact-content .info .head {
