@@ -24,7 +24,7 @@ body {
 }
 
 .section.bg {
-    background: var(--color-secondary);
+    background: yellow;
 }
 
 
@@ -88,6 +88,14 @@ ul.nav i {
     position: relative;
     margin: 3px 10px;
     padding: 5px 5px;
+}
+
+ul.nav a {
+    color: black;
+}
+
+a:hover {
+    opacity: 50%;
 }
 
 
