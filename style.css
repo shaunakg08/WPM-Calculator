@@ -72,6 +72,10 @@ nav {
     transition: all .5s ease-in-out;
 }
 
+nav:hover {
+    opacity: 0.1;
+}
+
 ul.nav {
     float: right;
     list-style: none;
