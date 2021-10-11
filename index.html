@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="main.css">
     <!-- Icon -->
     <link rel="icon" type="image/faviicon" href="icons/favicon.ico">
 
@@ -53,8 +53,43 @@
         <div class="container ">
             <h1 data-aos="zoom-in-up" data-aos-duration="1000">Test your typing speed Now!!!</h1>
 
-
+            <span class="main">
+                <article class="intro">
+                  <p>
+                    This is a typing speed test. Copy the passage of classical literature
+                    in the field below. The timer starts when you start typing. It will
+                    only stop when you match the excerpt EXACTLY. Godspeed!
+                  </p>
+                </article>
+          
+                <section class="test-area">
+                  <div id="origin-text">
+                    <p></p>
+                  </div>
+          
+                  <div class="test-wrapper">
+                    <textarea
+                      id="test-area"
+                      name="textarea"
+                      rows="8"
+                      placeholder="The clock starts when you start typing."
+                    ></textarea>
+                  </div>
+                  <div class="timers">
+                    <span id="last-time">Last Time: 00:00:00</span>
+            <span id="wpm">Words Per Min: 0</span>
+            <span id="best-wpm">Best WPM: 0</span>
         </div>
+        <div class="meta">
+            <section id="clock">
+                <div class="timer">00:00:00</div>
+            </section>
+            <button id="redo">Redo Test</button>
+            <button id="reset">Next Test</button>
+        </div>
+        </section>
+        </span>
+    </div>
     </div>
 
 
