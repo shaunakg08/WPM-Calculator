@@ -80,19 +80,12 @@
     font-weight: 600;
 }
 
-.meta {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
 .timer {
     font-size: 3em;
     font-weight: bold;
 }
 
 #reset {
-    padding: 0.5em 1em;
     font-size: 1.2em;
     font-weight: bold;
     color: #309657;
@@ -113,7 +106,6 @@
 }
 
 #redo {
-    padding: 0.5em 1em;
     font-size: 1.2em;
     font-weight: bold;
     color: #335d8d;
