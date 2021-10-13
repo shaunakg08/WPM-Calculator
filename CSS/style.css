@@ -1,5 +1,10 @@
 html {
     scroll-behavior: smooth;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -o-user-select: none;
 }
 
 body {
@@ -136,6 +141,7 @@ h1.hero:after {
 */
 
 .container>h1:not(.hero) {
+    font-family: 'Noto Sans Mono', monospace;
     margin-bottom: 30px;
     text-align: center;
 }
@@ -184,6 +190,7 @@ p {
 /* contact section styling */
 
 section {
+    font-family: 'Merriweather', serif;
     padding: 100px 0;
 }
 
@@ -350,6 +357,7 @@ section .title::after {
 /* footer section styling */
 
 footer {
+    font-family: 'Quicksand', sans-serif;
     background: #111;
     padding: 15px 23px;
     color: #fff;
