@@ -1,5 +1,5 @@
 <p align=center>
-	<img src='icons/logo.png' height=200/>
+	<img src='imgs/logo.png' height=200/>
 </p>  
 
 # WPM Calculator
