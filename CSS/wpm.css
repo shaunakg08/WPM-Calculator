@@ -81,11 +81,6 @@
     font-weight: 600;
 }
 
-#best-wpm {
-    font-size: 1.1em;
-    font-weight: 600;
-}
-
 #wpm {
     font-size: 1.1em;
     font-weight: 600;
@@ -102,39 +97,22 @@
     font-weight: bold;
 }
 
-#reset {
-    font-size: 1.2em;
-    font-weight: bold;
-    color: #309657;
-    background: white;
-    border: 10px solid #309657;
-    border-radius: 10px;
-    outline: none;
-}
-
-#reset:hover {
-    color: white;
-    background-color: #309657;
-    cursor: pointer;
-}
-
-#reset:active {
-    transform: scale(0.96);
-}
-
 #redo {
+    margin-top: 40px;
+    margin-left: 220px;
     font-size: 1.2em;
     font-weight: bold;
-    color: #335d8d;
+    color: #000000;
     background: white;
-    border: 10px solid #335d8d;
+    border: 7px solid #000000;
     border-radius: 10px;
     outline: none;
 }
 
 #redo:hover {
+    transition: all 0.5s ease-in;
     color: white;
-    background-color: #335d8d;
+    background-color: #000000;
     cursor: pointer;
 }
 
