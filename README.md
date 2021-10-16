@@ -6,7 +6,7 @@
 
 A cool web-app for calculating your typing speed and help it to increase for your future use.
 Words per minute, commonly abbreviated wpm (sometimes uppercased WPM), is a measure of words processed in a minute, often used as a measurement of the speed of typing, reading or Morse code sending and receiving.  
-A live version of this app is available at [https://WPMCalculator.netlify.app](https://WPMCalculator.netlify.app).  
+A live version of this app is available at [https://wpmcalculator.netlify.app](https://wpmcalculator.netlify.app).  
 <hr>
 <br>
 
