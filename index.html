@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/wpm.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet" />
 
     <!-- Google Fonts  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -37,9 +38,6 @@
 
 <body>
 
-    <!----scroll up button
-    ===================================-->
-    <button onclick="scrollToTop()" id="myBtn" title="Go to top" title="scroll-up-button">⤊</button>
 
     <!---- Navigation Header 
     ============================= -->
@@ -50,8 +48,8 @@
 
                 <ul class="nav" data-aos="slide-left" data-aos-duration="1500">
 
-                    <a href="#contact"><i class="bi bi-envelope-fill" style="font-size:x-large;" title="Contacts"></i></a>
                     <a href="#faq"><i class="bi bi-question-circle-fill" style="font-size: x-large;" title="FAQs"></i></a>
+                    <a onclick="scrollToTop()"><i class="bi bi-arrow-up-square-fill" style="font-size:x-large;" title="Contacts"></i></a>
                     <a href="https://github.com/Shaunak0806/WPM-Counter" target="_blank"><i class="bi bi-github" style="font-size: x-large;" title="Source Code"></i></a>
 
 
@@ -66,46 +64,40 @@
         <div class="container ">
             <h1 data-aos="zoom-in-up" data-aos-duration="1000">Test your typing speed Now!!!</h1>
 
-
-
-            <!-- blobs -->
-            <img src="imgs/blob1.svg" style="height:60%; font-size: 0; position: absolute;  top: 80px; right:0px; z-index: 0;">
-            <img src="imgs/blob4.svg" style="height:60%; font-size: 0; position: absolute; left:0px; z-index: 0;">
-            <img src="imgs/blob7.svg" style="height:60%; font-size: 0; position: absolute; top: 600px; right:0px; z-index: 0;">
-            <img src="imgs/blob5.svg" style="height:70%; font-size: 0; position: absolute; top: 700px; left:0px; z-index: 0;">
-
-
-
             <span class="main">
-                <article class="intro">
+                <article class="intro" data-aos="zoom-in" data-aos-duration="1000">
                   <p>
                     This is a typing speed test. Copy the passage of classical literature
                     in the field below. The timer starts when you start typing. It will
                     only stop when you match the excerpt EXACTLY. Godspeed!
                   </p>
                 </article>
+            
           
-                <section class="test-area">
+                <section class="test-area" data-aos="zoom-in-up" data-aos-duration="1000">
                   <div id="origin-text"> 
                     <p></p>
                   </div>
+
+                  <div class="meta">
+                    <section>
+                        <div class="timer">00:00:00</div>
+                    </section>
+                    <br><br><br><br>
+
+                </div>
           
                   <div class="test-wrapper">
                     <textarea id="test-area" name="textarea" rows="8"  style="resize: none;" placeholder="The clock starts when you start typing."
                       ></textarea>
                   </div>
+                  <br>
                   <div class="timers">
                     <span id="last-time" style="text-align: center;">Last Time: 00:00:00</span>
             <span id="wpm">Words Per Min: 0</span>
             <span id="best-wpm">Best WPM: 0</span>
         </div>
-        <div class="meta">
-            <section id="clock">
-                <div class="timer">00:00:00</div>
-            </section>
-            <button id="redo">Redo Test</button>
-            <button id="reset">Next Test</button>
-        </div>
+
         </section>
         </span>
     </div>
@@ -120,9 +112,6 @@
             <h1 class="reset "></h1>
         </div>
     </div>
-
-
-
 
     <div class="section ">
         <div class="footer ">
@@ -160,46 +149,6 @@
     </div>
 
 
-    <!-- contact section start
-     ================================== -->
-    <section class="contact" id="contact">
-        <div class="max-width">
-            <h2 class="title">Contact me</h2>
-            <div class="contact-content">
-                <div class="column left" data-aos="slide-right">
-                    <div class="text">Get in Touch</div>
-
-                    <div class=" icons ">
-                        <div class="row ">
-                            <a href="https://github.com/Shaunak0806"><i class="bi bi-github "></i></a>
-
-                            <div class="info ">
-                                <div class="head "><b>Github Account</b></div>
-                                <div class="sub-title ">Shaunak0806</div>
-                            </div>
-                        </div>
-                        <div class="row ">
-                            <a href="https://www.instagram.com/?hl=en"><i class="bi bi-instagram "></i></a>
-                            <div class="info ">
-                                <div class="head "><b>Instgram</b></div>
-                                <div class="sub-title ">shaunak.08s</div>
-                            </div>
-                        </div>
-                        <div class="row ">
-                            <a href="https://shaunak0806.github.io/"><i class="bi bi-globe2 "></i></a>
-                            <div class="info ">
-                                <div class="head "><b>Website</b></div>
-                                <div class="sub-title ">shaunak0806.github.io</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="column right " data-aos="slide-left">
-                    <img src="imgs/contactme.jpg ">
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- footer section start
      ==================================  -->
