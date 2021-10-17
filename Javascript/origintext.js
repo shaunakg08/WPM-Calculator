@@ -1,32 +1,39 @@
 var previousRandom = 0;
 var textSamples = [
-  "I must not fear. Fear is the mind-killer. Fear is the little-death that brings total obliteration. I will face my fear. I will permit it to pass over me and through me. And when it has gone past I will turn the inner eye to see its path. Where the fear has gone there will be nothing. Only I will remain.",
-  "The only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.",
-  "He allowed himself to be swayed by his conviction that human beings are not born once and for all on the day their mothers give birth to them, but that life obliges them over and over again to give birth to themselves.",
-  "There is an idea of a Patrick Bateman, some kind of abstraction, but there is no real me, only an entity, something illusory, and though I can hide my cold gaze and you can shake my hand and feel flesh gripping yours and maybe you can even sense our lifestyles are probably comparable: I simply am not there.",
-  '"Why did you do all this for me?" he asked. "I don\'t deserve it. I\'ve never done anything for you." "You have been my friend," replied Charlotte. "That in itself is a tremendous thing."',
-  "I wanted you to see what real courage is, instead of getting the idea that courage is a man with a gun in his hand. It's when you know you're licked before you begin but you begin anyway and you see it through no matter what.",
-  "And Lot's wife, of course, was told not to look back where all those people and their homes had been. But she did look back, and I love her for that, because it was so human. So she was turned to a pillar of salt. So it goes. People aren't supposed to look back. I'm certainly not going to do it anymore.",
-  "Gatsby believed in the green light, the orgastic future that year by year recedes before us. It eluded us then, but that's no matter-tomorrow we will run faster, stretch out our arms farther...And then one fine morning—So we beat on, boats against the current, borne back ceaselessly into the past.",
-  "There is a tide in the affairs of men. Which, taken at the flood, leads on to fortune; Omitted, all the voyage of their life is bound in shallows and in miseries. On such a full sea are we now afloat, And we must take the current when it serves, Or lose our ventures.",
-  "Towards thee I roll, thou all-destroying but unconquering whale; to the last I grapple with thee; from hell's heart I stab at thee; for hate's sake I spit my last breath at thee."
+    "I am enough of an artist to draw freely upon my imagination. Imagination is more important than knowledge. Knowledge is limited. Imagination encircles the world.",
+
+    "One of the basic rules of the universe is that nothing is perfect. Perfection simply doesn't exist.....Without imperfection, neither you nor I would exist",
+
+    "The great secret of true success, of true happiness, is this: the man or woman who asks for no return, the perfectly unselfish person, is the most successful.",
+
+    'Books are important in various Unexpected ways, Books allow Readers to travel without using their feet, Books give wings to our imagination, books are full of knowledge, joy, happiness, wisdom and so much more into it, Books are more than enjoyment, Books have the capability to transform your life,',
+
+    "Your success and happiness lies in you. Resolve to keep happy, and your joy and you shall form an invincible host against difficulties.",
+
+    "Your time is limited, so don’t waste it living someone else’s life. Don’t be trapped by dogma – which is living with the results of other people’s thinking.",
+
+    "Watch your thoughts, they turn into words. Watch your words, they turn into actions. Watch your actions, they turn into habits. Watch your habits, they turn into character. Watch your character, it turns into your destiny.’ It all begins with a thought.",
+
+    "I learned that courage was not the absence of fear, but the triumph over it. The brave man is not he who does not feel afraid, but he who conquers that fear. ",
+
+    "Talk to yourself atleast once in a Day.. Otherwise you may miss a meeting with an EXCELLENT person in this World."
 ];
 
 
 // IIFE starts with random text sample
 (function randomText() {
-  var randomNumber = Math.floor(Math.random() * textSamples.length);
-  var openingText = textSamples[randomNumber];
-  document.querySelector("#origin-text p").innerHTML = openingText;
+    var randomNumber = Math.floor(Math.random() * textSamples.length);
+    var openingText = textSamples[randomNumber];
+    document.querySelector("#origin-text p").innerHTML = openingText;
 })();
 
 // Allows next button to move through array
 function nextRandom() {
-  var nextText = previousRandom + 1;
-  if (nextText === textSamples.length) {
-    nextText = 0;
-  }
-  var nextTest = textSamples[nextText];
-  document.querySelector("#origin-text p").innerHTML = nextTest;
-  previousRandom = nextText;
+    var nextText = previousRandom + 1;
+    if (nextText === textSamples.length) {
+        nextText = 0;
+    }
+    var nextTest = textSamples[nextText];
+    document.querySelector("#origin-text p").innerHTML = nextTest;
+    previousRandom = nextText;
 }
