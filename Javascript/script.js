@@ -1,7 +1,6 @@
 const testWrapper = document.querySelector(".test-wrapper");
 const testArea = document.querySelector("#test-area");
 const redoButton = document.querySelector("#redo");
-const resetButton = document.querySelector("#reset");
 const theTimer = document.querySelector(".timer");
 const lastTime = document.querySelector("#last-time");
 const lastWpm = document.querySelector("#wpm");
@@ -123,4 +122,3 @@ function reset() {
 testArea.addEventListener("keypress", start, false);
 testArea.addEventListener("keyup", spellCheck, false);
 redoButton.addEventListener("click", redo, false);
-resetButton.addEventListener("click", reset, false);
