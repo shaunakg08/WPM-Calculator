@@ -224,10 +224,7 @@
     }
     
     @media (max-device-width: 450px) {
-        .phonealert {
-            display: block;
-        }
-        body {
-            overflow: hidden;
+        body:not(.phonealert) {
+            display: none;
         }
     }
