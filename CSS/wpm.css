@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap');
 .masthead {
     text-align: center;
     width: fit-content;
@@ -44,11 +45,6 @@
     outline: none;
 }
 
-.test-wrapper {
-    border: 10px solid grey;
-    border-radius: 10px;
-}
-
 #origin-text {
     margin: 0 0 1.0em 0;
     padding: 0.8em 1em 0;
@@ -64,10 +60,18 @@
 
 .test-wrapper {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    font-family: 'Roboto', sans-serif;
+    font-size: x-large;
 }
 
-.test-wrapper textarea {
+textarea {
+    display: flex;
     flex: 1;
+    border: 7px solid rgb(8, 8, 8);
+    border-radius: 5px;
 }
 
 .timers {
@@ -127,5 +131,5 @@
 }
 
 .blinker {
-    animation: blink 0.5s step-end infinite alternate;
+    animation: blink 1.0s infinite;
 }

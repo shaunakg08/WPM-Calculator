@@ -6,6 +6,7 @@ const lastTime = document.querySelector("#last-time");
 const lastWpm = document.querySelector("#wpm");
 const bestWpm = document.querySelector("#best-wpm");
 
+
 var timer = [0, 0, 0, 0];
 var interval;
 var timerRunning = false;
@@ -42,19 +43,23 @@ function spellCheck() {
 
     if (textEntered == originText) {
         clearInterval(interval);
-        theTimer.classList.remove("blinker");
+
         testWrapper.classList.remove("blinker");
-        testWrapper.style.borderColor = "yellow";
+        testWrapper.style.color = "yellow";
+        testWrapper.innerHTML = "Woah! Check your results";
         setDisplayTwo();
     } else {
         if (textEntered == originTextMatch) {
-            theTimer.classList.remove("blinker");
+
             testWrapper.classList.remove("blinker");
-            testWrapper.style.borderColor = "green";
+            testWrapper.style.color = "green";
+            testWrapper.innerHTML = "Keep Going!"
         } else {
-            testWrapper.style.borderColor = "red";
+            testWrapper.style.color = "red";
             testWrapper.classList.add("blinker");
-            theTimer.classList.add("blinker");
+            testWrapper.innerHTML = "ERROR!!"
+
+
         }
     }
 }
@@ -101,7 +106,9 @@ function redo() {
     testArea.value = "";
     theTimer.innerHTML = "00:00:00";
     lastWpm.innerHTML = "Words Per Min: 0";
-    testWrapper.style.borderColor = "grey";
+    testWrapper.style.color = "black";
+    testWrapper.innerHTML = "Test your typing speed again!"
+    testWrapper.classList.remove("blinker");
 }
 
 // Next puzzle
